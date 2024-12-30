@@ -22,6 +22,17 @@ cd STAR
 python trainval.py --test_set <dataset to evaluate> --start_test <epoch to start test>
 ```
 
+### Train with different encoder types
+
+```
+python trainval.py --test_set <dataset to evaluate> --start_test <epoch to start test> --encoder_type <encoder type : gcn, gat, gtn>
+```
+
+### Plot log files
+```
+python plot.py <log file path to plot> --output_dir <output path to save plots>
+```
+
 Configuration files are also created after the first run, arguments could be modified through configuration files or command line. 
 Priority: command line \> configuration files \> default values in script.
 
